@@ -1,30 +1,21 @@
-<?
+<?php
 
-	
-	class Pessoa{	
-		protected $nome;
-		protected $idade;
-		protected $altura;
+	required_once "Pessoa.php";
+
+	$pessoa = new Pessoa('João', 35, '1,85');
+
+	$pessoa->andar();
 
 
-		function __construct($nome, $idade, $altura)
-		{
-			$this->nome = $nome;
-			$this->idade = $idade;
-			$this->altura = $altura;
-		}
-		public function andar ()
-		{
-			echo "Andando...";
-		}
-		public function identificacao()
-		{
-			return "
-			Nome: {$this->nome}
-			Idade: {$this->idade}
-			Altura: {$this->altura}";
-		}
-	}
+
+
+
+
+
+
+
+
+
 
 
 ?>
